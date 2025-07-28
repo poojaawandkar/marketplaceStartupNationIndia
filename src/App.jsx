@@ -1335,7 +1335,7 @@ function App() {
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/register" element={<CompanyRegistrationForm />} />
         </Routes>
-        <footer className="footer">
+        {/* <footer className="footer">
           <div className="footer-left">
             <img src={footerLogo} alt="Footer Logo" className="footer-logo" />
             <p>Startup Nation India, Balewadi Highstreet, Pune. 411045</p>
@@ -1359,7 +1359,7 @@ function App() {
               <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
             </a>
           </div>
-        </footer>
+        </footer> */}
       </div>
     </Router>
   );
