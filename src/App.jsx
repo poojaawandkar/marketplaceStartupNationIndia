@@ -282,7 +282,7 @@ function Marketplace() {
         >
           Register Your Product 
         </button>
-        <div className="marketplace-search-col">
+        {/* <div className="marketplace-search-col">
           <label htmlFor="type-filter" className="marketplace-search-label">Find Services</label>
           <input
             type="text"
@@ -291,7 +291,7 @@ function Marketplace() {
             onChange={e => setSearch(e.target.value)}
             className="marketplace-search-input"
           />
-        </div>
+        </div> */}
         <button
           className="marketplace-filters-toggle"
           onClick={() => setMobileFiltersOpen((v) => !v)}
