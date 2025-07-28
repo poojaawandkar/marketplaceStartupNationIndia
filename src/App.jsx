@@ -272,7 +272,7 @@ function Marketplace() {
       )}
       
       <header className="main-heading">
-        <h1>Marketplace</h1>
+        <h1>Startup Nation Marketplace</h1>
         <p>Discover innovative products and services from startups.</p>
       </header>
       <div className="marketplace-header-row">
