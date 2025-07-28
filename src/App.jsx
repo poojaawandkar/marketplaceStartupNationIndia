@@ -412,7 +412,7 @@ function Marketplace() {
         ) : (
           <div className="marketplace-grid">
             {filteredProducts.length === 0 ? (
-              <div className="marketplace-no-results">Products will be displayed here after approval.</div>
+              <div className="marketplace-no-results">Launching Soon....</div>
             ) : (
               filteredProducts.map(product => {
                 console.log('Card product data:', { 
