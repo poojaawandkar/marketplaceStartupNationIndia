@@ -215,9 +215,10 @@ function Marketplace() {
       })
       .subscribe((status) => {
         console.log('Real-time subscription status:', status);
-        if (status === 'SUBSCRIBED') {
-          showNotification('Real-time updates connected!', 'success');
-        } else if (status === 'CLOSED') {
+        // if (status === 'SUBSCRIBED') {
+        //   showNotification('');
+        //}
+         if (status === 'CLOSED') {
           console.log('Real-time subscription closed, attempting to reconnect...');
           // Try to reconnect after a short delay
           setTimeout(() => {
@@ -272,7 +273,16 @@ function Marketplace() {
       )}
       
       <header className="main-heading">
-        <h1>Startup Nation Marketplace</h1>
+                <div className="main-heading-row">
+          <h1>Startup Nation Marketplace</h1>
+          <button 
+            className="marketplace-filters-toggle"
+            onClick={() => setMobileFiltersOpen(!mobileFiltersOpen)}
+            aria-label="Toggle filters"
+          >
+            <div className="marketplace-filters-hamburger"></div>
+          </button>
+        </div>
         <p>Discover innovative products and services from startups.</p>
       </header>
       <div className="marketplace-header-row">
@@ -292,13 +302,7 @@ function Marketplace() {
             className="marketplace-search-input"
           />
         </div> */}
-        <button
-          className="marketplace-filters-toggle"
-          onClick={() => setMobileFiltersOpen((v) => !v)}
-          aria-label="Show filters"
-        >
-          <span className="marketplace-filters-hamburger"></span>
-        </button>
+        {/* Removed duplicate filter toggle button */}
       </div>
       <div className={`marketplace-filters-sticky${mobileFiltersOpen ? ' open' : ''}`}> 
         {mobileFiltersOpen && (

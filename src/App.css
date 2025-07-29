@@ -39,12 +39,27 @@ body, html, #root, .App {
   justify-content: center;
 }
 
+.main-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  position: relative;
+}
+
+.main-heading-row h1 {
+  margin-right: 20px;
+}
+
 .main-heading h1 {
   font-size: 48px;
   margin-bottom: 10px;
   font-weight: 800;
   letter-spacing: 1px;
   text-align: center;
+  color: white;
 }
 
 .main-heading p {
@@ -712,6 +727,7 @@ body, html, #root, .App {
   
   .main-heading h1 {
     font-size: 36px;
+    color: white;
   }
   
   .main-heading p {
@@ -737,6 +753,15 @@ body, html, #root, .App {
   
   .main-heading h1 {
     font-size: 28px;
+    color: white;
+  }
+  
+  .main-heading-row {
+    gap: 15px;
+  }
+  
+  .main-heading-row h1 {
+    margin-right: 15px;
   }
   
   .main-heading p {
@@ -799,16 +824,17 @@ body, html, #root, .App {
     gap: 8px;
   }
   .marketplace-header-row {
-    flex-direction: row;
+    flex-direction: column;
     gap: 8px;
-    justify-content: space-between;
-    padding: 0 6px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 2px;
   }
   .marketplace-register-btn {
     font-size: 15px;
     padding: 8px 10px;
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0 auto;
+    display: block;
   }
   .marketplace-search-label {
     font-size: 15px;
@@ -889,6 +915,15 @@ body, html, #root, .App {
   
   .main-heading h1 {
     font-size: 20px;
+    color: white;
+  }
+  
+  .main-heading-row {
+    gap: 10px;
+  }
+  
+  .main-heading-row h1 {
+    margin-right: 10px;
   }
   
   .main-heading p {
@@ -1705,9 +1740,13 @@ body, html, #root, .App {
   .main-heading {
     padding: var(--header-padding);
   }
+  .main-heading-row {
+    color: white;
+  }
   
   .main-heading h1 {
     font-size: 32px;
+    color: white;
   }
   
   .main-heading p {
@@ -1820,6 +1859,7 @@ body, html, #root, .App {
   .main-heading h1 {
     font-size: 28px;
     line-height: 1.2;
+    color: white;
   }
   
   .main-heading p {
