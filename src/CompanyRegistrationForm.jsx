@@ -290,7 +290,7 @@ function CompanyRegistrationForm() {
               {errors.productName && <div className="company-form-error">{errors.productName}</div>}
             </div>
             <div className="company-form-group">
-              <label>Company Type<span className="company-form-required"> *</span></label><br />
+              <label>Is your offering product based or service based ?<span className="company-form-required"> *</span></label><br />
               <select name="type" value={form.type} onChange={handleChange} className="company-form-input">
                 <option value="">Select Type</option>
                 <option value="Product-based">Product-based</option>
@@ -299,7 +299,7 @@ function CompanyRegistrationForm() {
               {errors.type && <div className="company-form-error">{errors.type}</div>}
             </div>
             <div className="company-form-group">
-              <label>Company Status<span className="company-form-required"> *</span></label><br />
+              <label>Development Status<span className="company-form-required"> *</span></label><br />
               <select name="status" value={form.status} onChange={handleChange} className="company-form-input">
                 <option value="">Select Status</option>
                 <option value="Developed">Developed</option>
@@ -331,7 +331,7 @@ function CompanyRegistrationForm() {
               {errors.youtubelink && <div className="company-form-error">{errors.youtubelink}</div>}
             </div>
             <div className="company-form-group">
-              <label>Proudct Link on Company / Marketplace website (Company Website Prefered)<span className="company-form-required"> *</span></label><br />
+              <label>Product Link on Company / Marketplace website (Company Website Prefered)<span className="company-form-required"> *</span></label><br />
               <input name="buyLink" value={form.buyLink} onChange={handleChange} className="company-form-input" />
               {errors.buyLink && <div className="company-form-error">{errors.buyLink}</div>}
             </div>

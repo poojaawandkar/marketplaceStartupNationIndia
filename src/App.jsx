@@ -290,7 +290,7 @@ function Marketplace() {
           onClick={() => navigate('/register')}
           className="marketplace-register-btn"
         >
-          Register Your Product 
+          Register Your Product/Services
         </button>
         {/* <div className="marketplace-search-col">
           <label htmlFor="type-filter" className="marketplace-search-label">Find Services</label>
@@ -492,7 +492,8 @@ function Marketplace() {
   );
 }
 
-// Helper function to convert YouTube URLs to embed format
+// Helper function to convert 
+// URLs to embed format
 function getYouTubeEmbedUrl(url) {
   if (!url) return '';
   const shortMatch = url.match(/youtu\.be\/([a-zA-Z0-9_-]+)/);
