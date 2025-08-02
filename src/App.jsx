@@ -292,6 +292,25 @@ function Marketplace() {
         >
           Register Your Product/Services
         </button>
+        <button
+          className="marketplace-count-btn"
+          style={{
+            background: '#333',
+            color: '#f5c13b',
+            border: '2px solid #f5c13b',
+            borderRadius: '8px',
+            padding: '10px 16px',
+            fontSize: '14px',
+            fontWeight: '600',
+            cursor: 'default',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px'
+          }}
+        >
+          <span>📊</span>
+          {filteredProducts.length} {filteredProducts.length === 1 ? 'Product' : 'Products'}
+        </button>
         {/* <div className="marketplace-search-col">
           <label htmlFor="type-filter" className="marketplace-search-label">Find Services</label>
           <input

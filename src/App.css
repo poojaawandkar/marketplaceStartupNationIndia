@@ -241,6 +241,29 @@ body, html, #root, .App {
 .marketplace-register-btn:hover {
   background: #ffe08a;
 }
+
+.marketplace-count-btn {
+  background: #333;
+  color: #f5c13b;
+  border: 2px solid #f5c13b;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: default;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  transition: all 0.2s ease;
+}
+
+.marketplace-count-btn:hover {
+  background: #444;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(245,193,59,0.2);
+}
 .marketplace-search-col {
   display: flex;
   flex-direction: column;
@@ -831,12 +854,26 @@ body, html, #root, .App {
     justify-content: center;
     align-items: center;
     padding: 2px 2px;
+    text-align: center;
+    width: 100%;
   }
   .marketplace-register-btn {
     font-size: 15px;
     padding: 8px 10px;
     margin: 0 auto;
     display: block;
+    text-align: center;
+  }
+  
+  .marketplace-count-btn {
+    font-size: 13px;
+    padding: 6px 8px;
+    margin: 8px auto 0 auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   .marketplace-search-label {
     font-size: 15px;
@@ -970,6 +1007,35 @@ body, html, #root, .App {
   .domain-pill {
     padding: 6px 10px;
     font-size: 0.9em;
+  }
+  
+  .marketplace-header-row {
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 2px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .marketplace-register-btn {
+    font-size: 13px;
+    padding: 5px 6px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  
+  .marketplace-count-btn {
+    font-size: 11px;
+    padding: 3px 5px;
+    margin: 4px auto 0 auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
