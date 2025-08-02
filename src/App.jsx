@@ -476,9 +476,8 @@ function Marketplace() {
                         e.target.src = `data:image/svg+xml;base64,${btoa(`<svg width="180" height="180" xmlns="http://www.w3.org/2000/svg"><rect width="180" height="180" fill="#1a1a1a"/><text x="90" y="90" font-family="Arial" font-size="24" fill="#f5c13b" text-anchor="middle" dy=".3em">${product.companyName.charAt(0).toUpperCase()}</text></svg>`)}`;
                       }}
                     />
+                    <h4 className="marketplace-card-product"><strong>Product Name:</strong> {product.productName}</h4>
                     <p className="marketplace-card-company"><strong>Company Name:</strong> {product.companyName}</p>
-                    <h4><strong>Product Name:</strong> {product.productName}</h4>
-                    <p className="marketplace-card-desc"><strong>Short Description:</strong> {product.shortDesc}</p>
                     
                     <span className={`marketplace-status ${product.status === 'Developed' ? 'ready' : 'inprocess'}`}>{product.status}</span>
                   </div>
@@ -1230,6 +1229,10 @@ function ProductDetail() {
               </span>
             </div>
           </div>
+        </div>
+        <div className="product-detail-section">
+          <h2 className="product-detail-section-title">Short Description</h2>
+          <p className="product-detail-description">{product.shortDesc}</p>
         </div>
         <div className="product-detail-section">
           <h2 className="product-detail-section-title">About Company</h2>

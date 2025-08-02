@@ -470,6 +470,7 @@ body, html, #root, .App {
   justify-content: space-between;
   align-items: stretch;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .marketplace-card:hover {
@@ -501,11 +502,20 @@ body, html, #root, .App {
   display: block;
 }
 
+.marketplace-card-product {
+  color: #fff;
+  margin: 0 0 8px 0;
+  font-size: 1.3em;
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
 .marketplace-card-company {
   color: #f5c13b;
   font-weight: 600;
   margin: 4px 0 12px 0;
-  font-size: 1.3em;
+  font-size: 1.1em;
   text-align: center;
   width: 100%;
   display: block;
@@ -538,15 +548,7 @@ body, html, #root, .App {
   box-shadow: 0 2px 8px rgba(245,193,59,0.3);
 }
 
-.marketplace-card-desc {
-  color: #ccc;
-  font-size: 0.95em;
-  margin-top: 12px;
-  line-height: 1.5;
-  text-align: center;
-  width: 100%;
-  display: block;
-}
+
 
 /* Modal Styles */
 .marketplace-modal-overlay {
@@ -1535,17 +1537,19 @@ body, html, #root, .App {
     width: 100%;
   }
   
-  .marketplace-card-company {
-    font-size: 16px;
+  .marketplace-card-product {
+    font-size: 18px;
     text-align: center;
     width: 100%;
   }
   
-  .marketplace-card-desc {
+  .marketplace-card-company {
     font-size: 14px;
     text-align: center;
     width: 100%;
   }
+  
+
   
   /* Product Detail Responsive */
   .product-detail-container {
@@ -1663,17 +1667,19 @@ body, html, #root, .App {
     width: 100%;
   }
   
-  .marketplace-card-company {
-    font-size: 15px;
+  .marketplace-card-product {
+    font-size: 16px;
     text-align: center;
     width: 100%;
   }
   
-  .marketplace-card-desc {
+  .marketplace-card-company {
     font-size: 13px;
     text-align: center;
     width: 100%;
   }
+  
+
   
   /* Product Detail Responsive */
   .product-detail-container {
@@ -1778,17 +1784,19 @@ body, html, #root, .App {
     width: 100%;
   }
   
-  .marketplace-card-company {
-    font-size: 14px;
+  .marketplace-card-product {
+    font-size: 15px;
     text-align: center;
     width: 100%;
   }
   
-  .marketplace-card-desc {
+  .marketplace-card-company {
     font-size: 12px;
     text-align: center;
     width: 100%;
   }
+  
+
   
   /* Product Detail Responsive */
   .product-detail-container {
@@ -1893,19 +1901,21 @@ body, html, #root, .App {
     width: 100%;
   }
   
+  .marketplace-card-product {
+    font-size: 16px;
+    margin: 8px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
   .marketplace-card-company {
-    font-size: 15px;
+    font-size: 13px;
     margin: 6px 0;
     text-align: center;
     width: 100%;
   }
   
-  .marketplace-card-desc {
-    font-size: 13px;
-    margin: 8px 0;
-    text-align: center;
-    width: 100%;
-  }
+
   
   .marketplace-status {
     font-size: 12px;
