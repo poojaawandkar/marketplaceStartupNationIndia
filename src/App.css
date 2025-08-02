@@ -1119,6 +1119,7 @@ body, html, #root, .App {
   line-height: 1.6;
   margin-bottom: 18px;
   color: #e0e0e0;
+  white-space: pre-line;
 }
 
 .product-detail-buy-btn {
@@ -1954,6 +1955,7 @@ body, html, #root, .App {
   .product-detail-description {
     font-size: 14px;
     line-height: 1.5;
+    white-space: pre-line;
   }
   
   .product-detail-buy-btn {

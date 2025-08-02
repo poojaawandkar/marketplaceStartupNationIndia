@@ -1232,11 +1232,11 @@ function ProductDetail() {
         </div>
         <div className="product-detail-section">
           <h2 className="product-detail-section-title">Short Description</h2>
-          <p className="product-detail-description">{product.shortDesc}</p>
+          <div className="product-detail-description" dangerouslySetInnerHTML={{ __html: product.shortDesc?.replace(/\n/g, '<br/>') || '' }}></div>
         </div>
         <div className="product-detail-section">
           <h2 className="product-detail-section-title">About Company</h2>
-          <p className="product-detail-description">{product.about}</p>
+          <div className="product-detail-description" dangerouslySetInnerHTML={{ __html: product.about?.replace(/\n/g, '<br/>') || '' }}></div>
         </div>
         <div className="product-detail-section">
           <h2 className="product-detail-section-title">Gallery</h2>
